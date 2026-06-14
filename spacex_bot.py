@@ -7,8 +7,10 @@ from datetime import datetime
 # ======================
 # CONFIG
 # ======================
-TOKEN = "8441294799:AAFuMBzxuF4FOrIFmcM9Ml_3xWZnr76k63U"
-CHAT_ID = "6374435559"
+import os
+
+TOKEN = os.getenv("TOKEN")
+CHAT_ID = os.getenv("CHAT_ID")
 TICKER = "SPCX"
 ARCHIVO = "datos.json"
 
